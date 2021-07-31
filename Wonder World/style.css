@@ -1,0 +1,284 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+body {
+    background: #b3b3b3;
+    font-family: "Poppins", sans-serif;
+}
+
+footer {
+    text-align: center;
+    background: #00B6EF;
+    color: white;
+    font-size: 14px;
+    height: 22px;
+}
+
+.footer {
+    text-align: center;
+    background: #00B6EF;
+    color: white;
+    font-size: 14px;
+    height: 22px;
+    margin-top: 255px;
+}
+
+.body{
+   
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 115px;
+    margin-top: 2%;
+}
+.container {
+    max-width: 999px;
+    margin: 0 auto;
+
+}
+
+.container2 {
+    max-width: 999px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.container3 {
+    max-width: 999px;
+    margin: 0 auto;
+    margin-bottom: 30px;
+    margin-top: 50px;
+}
+
+.header {
+    width: 100%;
+    background: #00B6EF;
+    padding: 1rem 0;
+}
+
+.header nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    color: white;
+    font-weight: 700;
+}
+
+.header nav a {
+    font-size: 18px;
+    color: white;
+    margin-left: 100px;
+}
+
+.header nav a:last-child {
+    font-size: 13px;
+    margin-right: 100px;
+}
+
+.header nav a:first-child{
+    font-size: 13px;
+}
+
+.main {
+    width: 100%;
+    height: 350px;
+    background: url("design/viajem.jpg") no-repeat center center;
+}
+
+.main h1 {
+    color: white;
+    font-size: 25px;
+    margin-bottom: 410px;
+}
+
+.main-container {
+    display: flex;
+    align-items: center;
+    height: 700px;
+} 
+
+.passagens h1,
+.passagens h2 {
+    font-size: 18px;
+    margin: 1rem 0;
+    text-align: center;
+    color: #000000;
+}
+
+.passagens ul li{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 4rem;
+}
+
+.passagens h2 {
+    margin-top: 0;
+    text-align: left;
+}
+
+.passagens p {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.passagens a {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background: #00B6EF;
+    font-size: 13px;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 5px;
+    margin-top: 1rem;
+    transition: 0.2s cubic-bezier(0.2, 1, 0.2, 1.4);
+}
+
+.passagens a:hover {
+    /* animation: bounce 0.5s linear; */
+     transform: scale(1.1); 
+}
+
+@keyframes bounce { /* o @keyframes define as etapas da animação */
+    20% {
+      transform: translate3d(0, -6px, 0);
+    }
+    40% {
+      transform: translate3d(0, 0px, 0);
+    }
+    80% {
+      transform: translate3d(0, 2px, 0);
+    }
+    100% {
+      transform: translate3d(0, 0px, 0);
+    }
+  }
+
+/* Elementos com o ID "titulo" */
+#contato {
+    font-family: sans-serif;
+    color: black;
+    margin-right: 50%;
+} 
+
+/* Elementos com o ID "subtitulo" */
+#subtitulo {
+    font-family: sans-serif;
+    color: black;
+} 
+
+#check{
+    display: inline-block;
+}
+
+/* Elementos de tag <fieldset>*/
+fieldset {
+    border: 0;
+}
+
+/* Elemento de tag <body> */
+.form,
+.form1 {
+  
+    font-family: sans-serif;
+    font-size: 1em;
+    color: #59429d;
+    margin-left: 9%;
+    margin-top: 2%;
+}
+
+
+/* Elementos de tags <body>, <input>, <Select>, <textarea> e <button> */
+input, textarea, button {
+    font-family: sans-serif;
+    font-size: 1em;
+    color: black;
+    border-radius: 5px;
+}
+
+/* Elementos de classe "grupo" nos estados das pseudoclasses "before" e "after" */
+.grupo:before, .grupo:after {
+    display: table;
+}
+
+/* Elementos de classe "grupo" no estado da pseudoclasse "after" */
+.grupo:after {
+    clear: both;
+}
+
+/* Elementos de classe "campo" */
+.campo {
+    margin-bottom: 1em;
+}
+
+/* Elementos de classe "campo" de tag <label> */
+.campo label {
+    margin-bottom: 0.2em;
+    color: black;
+    display: block;
+}
+
+/* Elementos de classe "campo" ou "grupo" de tag <fieldset> */
+fieldset.grupo .campo {
+    float:  left;
+    margin-right: 2em;
+}
+
+/* Elementos de classe "campo" das tags <input> com atributo text e email, da tag <select> e da tag <textarea>*/
+.campo input[type="text"], .campo input[type="email"], .campo select, .campo textarea {
+    padding: 0.2em;
+    border: 1px solid #000000;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+    display: block;
+}
+
+/* Elemento de classe "campo" com tag <input>, <select> e <textarea> tocas com estado da pseudoclasse "focus"*/
+.campo input:focus, .campo select:focus, .campo textarea:focus {
+    background: #ffffff;
+}
+
+/* Elemento de classe "botao" */
+.botao {
+    font-size: 1.2em;
+    background: #00B6EF;
+    border: 0;
+    margin-bottom: 1em;
+    color: #ffffff;
+    padding: 0.2em 0.6em;
+    position: absolute;
+    top: 62%;
+    left: 12%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+/* Elemento de classe "botao" com o estado da pseudoclasse "hover" */
+.botao:hover {
+    background: rgb(82, 172, 247);
+    box-shadow: inset 2px 2px 2px rgba(0,0,0,0.2);
+    text-shadow: none;
+}
+
+/* Elementos de classe botão e de tag <select> */
+.botao, select{
+    cursor: pointer;
+}
+
